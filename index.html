@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>tailwind CSS setup with CLI</title>
+    <link rel="stylesheet" href="./output.css" />
+
+</head>
+
+<body>
+    <h1 class="bg-green-600 text-white text-2xl p-3 capitalize md:uppercase ... text-center">
+        tailwind CSS setup with CLI
+    </h1>
+
+    <ul class="bg-green-900 text-white m-2 flex [&>*]:flex capitalize">
+        <li><a class="p-3 hover:bg-black" href="home">home</a></li>
+        <li>
+            <a class="p-3 hover:bg-black" href="contact">contact</a>
+        </li>
+        <li><a class="p-3 hover:bg-black" href="about">about</a></li>
+        <li><a class="p-3 hover:bg-black" href="order">order</a></li>
+    </ul>
+
+    <div class="bg-green-600 text-2xl p-1 [&>*]:text-white">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis doloremque amet repellendus architecto
+            eligendi error veritatis, officia qui ducimus quaerat delectus sint odit debitis est facilis, excepturi,
+            numquam odio a.</p>
+    </div>
+
+</body>
+
+</html>
