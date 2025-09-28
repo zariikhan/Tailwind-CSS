@@ -39,6 +39,8 @@
     --color-purple-300: oklch(82.7% 0.119 306.383);
     --color-purple-400: oklch(71.4% 0.203 305.504);
     --color-purple-500: oklch(62.7% 0.265 303.9);
+    --color-purple-600: oklch(55.8% 0.288 302.321);
+    --color-purple-700: oklch(49.6% 0.265 301.924);
     --color-pink-50: oklch(97.1% 0.014 343.198);
     --color-pink-100: oklch(94.8% 0.028 342.258);
     --color-pink-200: oklch(89.9% 0.061 343.231);
@@ -264,6 +266,10 @@
     width: calc(var(--spacing) * 30);
     height: calc(var(--spacing) * 30);
   }
+  .size-40 {
+    width: calc(var(--spacing) * 40);
+    height: calc(var(--spacing) * 40);
+  }
   .size-50 {
     width: calc(var(--spacing) * 50);
     height: calc(var(--spacing) * 50);
@@ -450,6 +456,9 @@
   .bg-purple-500 {
     background-color: var(--color-purple-500);
   }
+  .bg-purple-700 {
+    background-color: var(--color-purple-700);
+  }
   .bg-sky-300 {
     background-color: var(--color-sky-300);
   }
@@ -535,6 +544,9 @@
   .underline {
     text-decoration-line: underline;
   }
+  .bg-blend-color {
+    background-blend-mode: color;
+  }
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
@@ -554,6 +566,14 @@
       }
     }
   }
+  .hover\:size-100 {
+    &:hover {
+      @media (hover: hover) {
+        width: calc(var(--spacing) * 100);
+        height: calc(var(--spacing) * 100);
+      }
+    }
+  }
   .hover\:w-2xl {
     &:hover {
       @media (hover: hover) {
@@ -565,6 +585,20 @@
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-black);
+      }
+    }
+  }
+  .hover\:bg-purple-600 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-purple-600);
+      }
+    }
+  }
+  .hover\:text-white {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-white);
       }
     }
   }
