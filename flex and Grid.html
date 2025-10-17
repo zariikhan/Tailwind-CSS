@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex In Tailwind CSS</title>
+    <link rel="stylesheet" href="output.css" />
+</head>
+
+<body>
+    <h1 class="text-[2rem]">FlexBox</h1>
+    <div class="flex justify-center items-center gap-4 bg-gray-400 h-100">
+        <div class="size-30 flex-none bg-red-300"></div>
+        <div class="size-30 flex-none bg-green-300"></div>
+        <div class="size-30 shrink-1 bg-blue-300"></div>
+        <div class="size-30 flex-none bg-purple-300"></div>
+    </div>
+    <h1 class="text-4xl">Grid</h1>
+    <div class="grid grid-cols-4 gap-2">
+        <div class="w-150 col-span-2 bg-red-300"></div>
+        <div class="size-30 bg-green-400"></div>
+        <div class="size-30 bg-purple-400"></div>
+        <div class="row-span-2 bg-blue-700"></div>
+        <div class="size-30 bg-pink-600"></div>
+        <div class="size-30 bg-amber-500"></div>
+        <div class="size-30 bg-cyan-400"></div>
+        <div class="size-30 bg-yellow-400"></div>
+    </div>
+
+    <div class="mt-10 grid gap-3">
+        <div>
+            <button class="bg-gray-300 p-2 size-10 rounded-[10px]">1</button>
+            <button class="bg-gray-300 p-2 size-10 rounded-[10px]">2</button>
+            <button class="bg-gray-300 p-2 size-10 rounded-[10px]">3</button>
+            <button class="bg-gray-300 p-2 size-10 rounded-[10px]">+</button>
+        </div>
+        <div>
+            <button class="bg-gray-300 p-2 size-10 rounded-[10px]">4</button>
+            <button class="bg-gray-300 p-2 size-10 rounded-[10px]">5</button>
+            <button class="bg-gray-300 p-2 size-10 rounded-[10px]">6</button>
+            <button class="bg-gray-300 p-2 size-10 rounded-[10px]">-</button>
+        </div>
+        <div>
+            <button class="bg-gray-300 p-2 size-10 rounded-[10px]">7</button>
+            <button class="bg-gray-300 p-2 size-10 rounded-[10px]">8</button>
+            <button class="bg-gray-300 p-2 size-10 rounded-[10px]">9</button>
+            <button class="bg-gray-300 p-2 size-10 rounded-[10px]">*</button>
+        </div>
+        <div>
+            <button class="bg-gray-300 p-2 size-10 rounded-[10px]">0</button>
+            <button class="bg-gray-300 p-2 size-10 rounded-[10px]">.</button>
+            <button class="bg-gray-300 p-2 size-10 rounded-[10px]">=</button>
+            <button class="bg-gray-300 p-2 size-10 rounded-[10px]">/</button>
+        </div>
+    </div>
+</body>
+
+</html>
