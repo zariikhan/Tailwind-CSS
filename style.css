@@ -1,1 +1,13 @@
 @import "tailwindcss";
+
+@keyframes move {
+    from{
+transform: translateX(0%);
+border-radius: none;
+    }
+    to{
+        transform: translateX(100%);
+        border-radius: 50%;
+       
+    }
+}
