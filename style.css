@@ -4,9 +4,11 @@
   from {
     transform: translateX(0%);
     border-radius: none;
+    background-color: red;
   }
   to {
     transform: translateX(100%);
     border-radius: 50%;
+    background-color: blue;
   }
 }
