@@ -12,3 +12,8 @@
     background-color: blue;
   }
 }
+
+@theme {
+  --breakpoint-md: 700px; 
+  --breakpoint-own: 800px; 
+}
