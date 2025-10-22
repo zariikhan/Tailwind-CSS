@@ -31,8 +31,10 @@
     --color-amber-800: oklch(47.3% 0.137 46.201);
     --color-amber-900: oklch(41.4% 0.112 45.904);
     --color-amber-950: oklch(27.9% 0.077 45.635);
+    --color-yellow-200: oklch(94.5% 0.129 101.54);
     --color-yellow-300: oklch(90.5% 0.182 98.111);
     --color-yellow-400: oklch(85.2% 0.199 91.936);
+    --color-yellow-500: oklch(79.5% 0.184 86.047);
     --color-green-200: oklch(92.5% 0.084 155.995);
     --color-green-300: oklch(87.1% 0.15 154.449);
     --color-green-400: oklch(79.2% 0.209 151.711);
@@ -109,6 +111,14 @@
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
+    --margin-4: 10px;
+    --margin-c-10: 30px;
+    --padding-3: 5px;
+    --padding-c-3: 50px;
+    --height-10: 100px;
+    --height-c-10: 10px;
+    --size-40: 20px;
+    --size-c-20: 100px;
   }
 }
 @layer base {
@@ -320,6 +330,9 @@
   .m-2 {
     margin: calc(var(--spacing) * 2);
   }
+  .m-4 {
+    margin: var(--margin-4);
+  }
   .m-10 {
     margin: calc(var(--spacing) * 10);
   }
@@ -329,14 +342,20 @@
   .m-auto {
     margin: auto;
   }
+  .m-c-10 {
+    margin: var(--margin-c-10);
+  }
   .mx-4 {
-    margin-inline: calc(var(--spacing) * 4);
+    margin-inline: var(--margin-4);
   }
   .mx-auto {
     margin-inline: auto;
   }
   .my-3 {
     margin-block: calc(var(--spacing) * 3);
+  }
+  .mt-1 {
+    margin-top: calc(var(--spacing) * 1);
   }
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
@@ -345,7 +364,7 @@
     margin-top: calc(var(--spacing) * 3);
   }
   .mt-4 {
-    margin-top: calc(var(--spacing) * 4);
+    margin-top: var(--margin-4);
   }
   .mt-5 {
     margin-top: calc(var(--spacing) * 5);
@@ -363,7 +382,7 @@
     margin-top: 10px;
   }
   .mr-4 {
-    margin-right: calc(var(--spacing) * 4);
+    margin-right: var(--margin-4);
   }
   .ml-1 {
     margin-left: calc(var(--spacing) * 1);
@@ -372,7 +391,7 @@
     margin-left: calc(var(--spacing) * 3);
   }
   .ml-4 {
-    margin-left: calc(var(--spacing) * 4);
+    margin-left: var(--margin-4);
   }
   .ml-5 {
     margin-left: calc(var(--spacing) * 5);
@@ -421,8 +440,8 @@
     height: calc(var(--spacing) * 30);
   }
   .size-40 {
-    width: calc(var(--spacing) * 40);
-    height: calc(var(--spacing) * 40);
+    width: var(--size-40);
+    height: var(--size-40);
   }
   .size-50 {
     width: calc(var(--spacing) * 50);
@@ -444,8 +463,12 @@
     width: 200px;
     height: 200px;
   }
+  .size-c-20 {
+    width: var(--size-c-20);
+    height: var(--size-c-20);
+  }
   .h-10 {
-    height: calc(var(--spacing) * 10);
+    height: var(--height-10);
   }
   .h-30 {
     height: calc(var(--spacing) * 30);
@@ -461,6 +484,9 @@
   }
   .h-auto {
     height: auto;
+  }
+  .h-c-10 {
+    height: var(--height-c-10);
   }
   .h-screen {
     height: 100vh;
@@ -566,9 +592,6 @@
   }
   .columns-3xs {
     columns: var(--container-3xs);
-  }
-  .break-after-all {
-    break-after: all;
   }
   .grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -807,11 +830,17 @@
   .bg-white {
     background-color: var(--color-white);
   }
+  .bg-yellow-200 {
+    background-color: var(--color-yellow-200);
+  }
   .bg-yellow-300 {
     background-color: var(--color-yellow-300);
   }
   .bg-yellow-400 {
     background-color: var(--color-yellow-400);
+  }
+  .bg-yellow-500 {
+    background-color: var(--color-yellow-500);
   }
   .bg-gradient-to-b {
     --tw-gradient-position: to bottom in oklab;
@@ -898,13 +927,16 @@
     padding: calc(var(--spacing) * 2);
   }
   .p-3 {
-    padding: calc(var(--spacing) * 3);
+    padding: var(--padding-3);
   }
   .p-4 {
     padding: calc(var(--spacing) * 4);
   }
   .p-\[2px\] {
     padding: 2px;
+  }
+  .p-c-3 {
+    padding: var(--padding-c-3);
   }
   .px-20 {
     padding-inline: calc(var(--spacing) * 20);
@@ -957,27 +989,6 @@
   }
   .text-wrap {
     text-wrap: wrap;
-  }
-  .break-words {
-    overflow-wrap: break-word;
-  }
-  .wrap-break-word {
-    overflow-wrap: break-word;
-  }
-  .whitespace-break-spaces {
-    white-space: break-spaces;
-  }
-  .whitespace-nowrap {
-    white-space: nowrap;
-  }
-  .whitespace-pre {
-    white-space: pre;
-  }
-  .whitespace-pre-line {
-    white-space: pre-line;
-  }
-  .whitespace-pre-wrap {
-    white-space: pre-wrap;
   }
   .text-amber-50 {
     color: var(--color-amber-50);

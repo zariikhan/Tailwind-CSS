@@ -14,6 +14,14 @@
 }
 
 @theme {
-  --breakpoint-md: 700px; 
-  --breakpoint-own: 800px; 
+  --breakpoint-md: 700px;
+  --breakpoint-own: 800px;
+  --margin-4: 10px;
+  --margin-c-10: 30px;
+  --padding-3: 5px;
+  --padding-c-3: 50px;
+  --height-10: 100px;
+  --height-c-10: 10px;
+  --size-40: 20px;
+  --size-c-20: 100px;
 }
