@@ -1,6 +1,8 @@
 @import "tailwindcss";
 
-@keyframes move {
+
+/* // for animation  */
+/* @keyframes move {
   from {
     transform: translateX(0%);
     border-radius: none;
@@ -11,9 +13,11 @@
     border-radius: 50%;
     background-color: blue;
   }
-}
+} */
 
-@theme {
+
+/* we can set the default breakpoint value and can also declare our own breakpoint */
+/* @theme {
   --breakpoint-md: 700px;
   --breakpoint-own: 800px;
   --margin-4: 10px;
@@ -24,4 +28,28 @@
   --height-c-10: 10px;
   --size-40: 20px;
   --size-c-20: 100px;
-}
+} */
+
+
+/* // directive  */
+/* @layer base {
+  h1 {
+    font-size: 2rem;
+  }
+  button {
+    padding: 4px;
+    margin: 1px;
+    border: 1px solid black;
+  }
+} */
+
+/* @layer base{
+  h1{
+    @apply text-2xl
+  }
+  button{
+    @apply p-1;
+    @apply m-1;
+    @apply border;
+  }
+} */
