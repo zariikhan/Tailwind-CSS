@@ -75,3 +75,30 @@
     @apply text-white bg-green-500 rounded p-1 mt-10
   }
 } */
+
+@layer components{
+  .btn{
+    @apply border rounded px-4 py-1.5 hover:bg-slate-100
+  }
+  .btn-primary{
+    @apply border rounded px-4 py-1.5 text-white border-blue-400 bg-blue-500 hover:bg-blue-600
+  }
+  .btn-secondary{
+    @apply border rounded px-4 py-1.5 text-white border-slate-400 bg-slate-500 hover:bg-slate-600
+  }
+  .btn-success{
+    @apply border rounded px-4 py-1.5 text-white border-green-400 bg-green-500 hover:bg-green-600
+  }
+  .btn-danger{
+    @apply border rounded px-4 py-1.5 text-white border-red-400 bg-red-500 hover:bg-red-600
+  }
+  .btn-warning{
+    @apply border rounded px-4 py-1.5 text-black border-yellow-400 bg-yellow-500 hover:bg-yellow-600
+  }
+  .btn-info{
+    @apply border rounded px-4 py-1.5 text-white border-cyan-400 bg-cyan-500 hover:bg-cyan-600
+  }
+  .btn-dark{
+    @apply border rounded px-4 py-1.5 text-white border-black bg-black hover:bg-black
+  }
+}
