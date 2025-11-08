@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-
 /* // for animation  */
 /* @keyframes move {
   from {
@@ -15,7 +14,6 @@
   }
 } */
 
-
 /* we can set the default breakpoint value and can also declare our own breakpoint */
 /* @theme {
   --breakpoint-md: 700px;
@@ -29,7 +27,6 @@
   --size-40: 20px;
   --size-c-20: 100px;
 } */
-
 
 /* // directive  */
 /* @layer base {
@@ -53,7 +50,6 @@
     @apply border;
   }
 } */
-
 
 /* // we can add custom classes like this */
 /* @layer components{
@@ -105,4 +101,10 @@
 
 /* @theme{
 --font-family:"Roboto", sans-serif;
+} */
+
+/* @layer components {
+  .image-transition {
+    @apply w-50 hover:scale-110 rounded transition duration-1000;
+  }
 } */
