@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+@layer components {
+  .button {
+    @apply bg-[#194043] text-white p-2 w-25 text-center rounded-full inline-block font-medium capitalize;
+  }
+  .secondary-btn {
+    @apply bg-white text-[#194043] p-2 w-25 text-center rounded-full inline-block font-medium capitalize ring-1 ring-gray-100;
+  }
+}
