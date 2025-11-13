@@ -13,28 +13,32 @@
 
 <body class="bg-[#f5f7f9]">
     <header>
-        <nav class="flex justify-around items-center">
+        <nav class="flex justify-around items-center max-sm:flex max-sm:justify-around max-sm:items-center">
             <div class="flex items-center justify-center gap-1">
-                <div class="bg-[url('prodmast.png')] size-20 bg-cover"></div>
-                <h1 class="capitalize text-lg font-medium">prodmast</h1>
-            </div>
-            <div class="flex *:capitalize list-none gap-5 font-medium">
-                <li><a href="Home">home</a></li>
-                <li><a href="About">about</a></li>
-                <li><a href="Services">services</a></li>
-                <li><a href="Contact">contact</a></li>
+                <div class="bg-[url('prodmast.png')] size-20 bg-cover max-sm:size-10"></div>
+                <h1 class="capitalize text-lg font-medium max-sm:text-sm">prodmast</h1>
             </div>
             <div>
-                <a class="button" href="sign up">sign up</a>
+                <ul class="flex *:capitalize list-none gap-5 font-medium max-sm:gap-3 max-sm:text-sm">
+                    <li><a href="Home">home</a></li>
+                    <li><a href="About">about</a></li>
+                    <li><a href="Services">services</a></li>
+                    <li><a href="Contact">contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <a class="button max-sm:p-1 max-sm:w-20" href="sign up">sign up</a>
             </div>
         </nav>
     </header>
     <main class="mt-20">
         <section class="text-center">
-            <h1 class="capitalize font-semibold text-5xl font-serif">the future of manufacturing</h1>
-            <h1 class="text-[44px]/20 font-semibold font-serif">with <span class="text-[#0d373f] capitalize">latest
+            <h1 class="capitalize font-semibold text-5xl font-serif max-sm:text-2xl">the future of manufacturing</h1>
+            <h1 class="text-[44px]/20 font-semibold font-serif max-sm:text-2xl">with <span
+                    class="text-[#0d373f] capitalize">latest
                     technology</span> </h1>
-            <p class="first-letter:capitalize text-gray-600">expert tech to elevate your manufacturing. Let's take your
+            <p class="first-letter:capitalize text-gray-600 max-sm:p-2">expert tech to elevate your manufacturing. Let's
+                take your
                 business further</p>
             <div class="mt-10">
                 <a class="button" href="get started">get started</a>
@@ -53,7 +57,8 @@
             <p class="text-center text-gray-500">from 80+ reviews</p>
         </section>
         <section>
-            <div class="flex justify-evenly items-end">
+            <div
+                class="flex justify-evenly items-end max-sm:flex-col max-sm:mt-10 max-sm:justify-center max-sm:gap-4 max-sm:items-center">
                 <img class="w-40 h-55 object-cover rounded-2xl" src="industry pipes.jpg" alt="pic">
                 <div class="w-30 h-40 bg-[#194043] rounded-2xl">
                     <p class="text-white font-bold text-2xl text-center mt-5 tracking-wider">100+</p>
